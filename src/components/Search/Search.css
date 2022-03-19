@@ -1,0 +1,70 @@
+.search {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.search__input-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    padding: 1rem;
+    background-color: var(--search-background);
+}
+
+.search__img {
+    width: 1.5rem;
+}
+
+.search__input {
+	font-family: "Nunito Sans";
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: var(--search-text);
+    background-color: var(--search-background);
+}
+
+.search__input::placeholder {
+    color: var(--search-placeholder)
+}
+
+.search__dropdown-container {
+    border-radius: .5rem;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3);
+    width: fit-content;
+    background-color: var(--search-background)
+}
+
+.search__dropdown {
+    font-family: "Nunito Sans";
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    color: var(--search-text);
+    background-color: var(--search-background);
+}
+
+@media only screen and (min-width: 800px) {
+    .search {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .search__input-container {
+        width: 40%;
+    }
+
+    .search__dropdown {
+        padding: 1rem;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,149 @@
+.details {
+    padding: 2rem;
+    background-color: var(--details-background);
+    min-height: calc(100vh - 90px);
+    color:  var(--details-text);
+    overflow: hidden;
+}
+
+.details__back-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    text-decoration: none;
+    background-color: var(--details-btn);
+    color: var(--details-text);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3);
+    padding: .5rem 1.5rem;
+    width: fit-content;
+}
+
+.details__back-btn-text {
+    margin: 0;
+}
+
+.details__back-btn:hover,
+.details__border:hover {
+    color: var(--details-text);
+}
+
+.details__arrow {
+    width: 1.5rem;
+}
+
+.details__flag {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.details__bold {
+    font-weight: 500;
+}
+
+.details__list {
+    list-style: none;
+    padding: 0;
+}
+
+.details__borders-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.details__border {
+    text-decoration: none;
+    color: var(--details-text);
+    background-color: var(--details-btn);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .2);
+    padding: .5rem 1.5rem;
+}
+
+.details__spinner {
+    margin: 3rem auto;
+}
+
+.details__border-spinner {
+    margin: 1rem 4rem;
+}
+
+@media only screen and (min-width: 800px) {
+    .details {
+        padding: 2rem;
+    }
+
+    .details__back-btn {
+        gap: .5rem;
+        padding: .5rem 2rem;
+    }
+    
+    .details__back-btn-text  {
+        font-size: 1.2rem;
+    }
+
+    .details__content {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 4rem;
+    }
+
+    .details__flag {
+        margin: 0;
+        width: 40%;
+    }
+
+    .details__lists-container {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .details__borders {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .details__list li {
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+
+    .details__name {
+        margin-bottom: 2rem;
+    }
+
+    .details__borders-header {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .details {
+        padding: 4rem;
+    }
+
+    .details__content {
+        gap: 6rem;
+    }
+g
+    .details__lists-container {
+        gap: 4rem;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .details {
+        padding: 4rem 6rem;
+    }
+
+    .details__content {
+        gap: 8rem;
+    }
+
+    .details__lists-container {
+        gap: 8rem;
+    }
+}
