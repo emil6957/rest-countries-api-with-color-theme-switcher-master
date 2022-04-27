@@ -4,10 +4,11 @@
     padding: 2rem 1rem;
 } 
 
+/* Display 1 card at width < 600 */
+
 .home__cards-container {
     padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 3rem;
 }
 
@@ -24,14 +25,10 @@
         padding: 2rem;
     }
 
-    .home__cards-container {
-        justify-content: space-between;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+    /* Display 2 cards at width >= 600 */
 
-    .home__card-link {
-        flex-basis: 45%;
+    .home__cards-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -39,9 +36,10 @@
     .home {
         padding: 4rem;
     }
-    
-    .home__card-link {
-        flex-basis: 29%;
+
+    /* Display 3 cards at width >= 1000 */
+    .home__cards-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -50,7 +48,8 @@
         padding: 4rem 6rem;
     }
 
-    .home__card-link {
-        flex-basis: 21%;
+    /* Display 4 cards at width >= 1400*/
+    .home__cards-container {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
