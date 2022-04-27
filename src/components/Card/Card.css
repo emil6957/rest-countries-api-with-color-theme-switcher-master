@@ -7,7 +7,9 @@
 
 .card__flag {
     width: 100%;
+    height: 200px;
     border-radius: .5rem .5rem 0 0;
+    object-fit: cover;
 }
 
 .card__name {
