@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/where-in-the-world/static/css/main.18d266d5.css",
-    "main.js": "/where-in-the-world/static/js/main.dcb4e5f7.js",
+    "main.js": "/where-in-the-world/static/js/main.f34fb674.js",
     "static/js/787.862c3719.chunk.js": "/where-in-the-world/static/js/787.862c3719.chunk.js",
     "index.html": "/where-in-the-world/index.html",
     "static/media/search.svg": "/where-in-the-world/static/media/search.c74167081763215c8469bb65f1bb1a79.svg",
     "static/media/moon-outline.svg": "/where-in-the-world/static/media/moon-outline.ed14e62383eee27a57c447e80da2f840.svg",
     "static/media/moon-filled.svg": "/where-in-the-world/static/media/moon-filled.618286c59c4889ec24a705d7b56a1bea.svg",
     "main.18d266d5.css.map": "/where-in-the-world/static/css/main.18d266d5.css.map",
-    "main.dcb4e5f7.js.map": "/where-in-the-world/static/js/main.dcb4e5f7.js.map",
+    "main.f34fb674.js.map": "/where-in-the-world/static/js/main.f34fb674.js.map",
     "787.862c3719.chunk.js.map": "/where-in-the-world/static/js/787.862c3719.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.18d266d5.css",
-    "static/js/main.dcb4e5f7.js"
+    "static/js/main.f34fb674.js"
   ]
 }
