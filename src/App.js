@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Details from "./components/Details/Details";
@@ -28,7 +28,7 @@ function App() {
 	}
 
 	return (
-		<BrowserRouter>
+		<Router>
 			<div className={`App ${isDarkMode ? "dark-mode" : ""}`}>
 				<Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
 				<Routes>
@@ -36,7 +36,7 @@ function App() {
 					<Route path="/details/:name" element={<Details countries={countries} />} />
 				</Routes>
 			</div>
-		</BrowserRouter>
+		</Router>
 	);
 }
 
