@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import logo from "../../images/logo.png";
 import moonOutline from "../../images/moon-outline.svg";
 import moonFilled from "../../images/moon-filled.svg";
 
@@ -9,7 +10,10 @@ export default function Header({ isDarkMode, toggleDarkMode }) {
 
     return (
         <header className="header">
-            <h1 className="header__title">Where in the world?</h1>
+            <div className="header__title-wrapper">
+                <img className="header__logo" src={logo} alt="logo" />
+                <h1 className="header__title">Where in the world?</h1>
+            </div>
             <button onClick={toggleDarkMode} className="header__btn">
                 {/* <img className="header__moon" src={isDarkMode ? moonFilled : moonOutline} alt={isDarkMode ? "filled in moon" : "outline of a moon" } /> */}
                 {moon}
