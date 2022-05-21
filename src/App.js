@@ -9,7 +9,7 @@ import Details from "./components/Details/Details";
 function App() {
 	const [countries, setCountries] = useState([]);
 	const [loading, setLoading] = useState(false);
-	const [isDarkMode, setIsDarkMode] = useState(false);
+	const [isDarkMode, setIsDarkMode] = useState(JSON.parse(localStorage.getItem("darkMode")));
 
 	useEffect(() => {
 		setLoading(true);
@@ -22,6 +22,10 @@ function App() {
 				setLoading(false);
 			})
 	}, [])
+
+	useEffect(() => {
+		localStorage.setItem("darkMode", isDarkMode);
+	}, [isDarkMode])
 
 	function toggleDarkMode() {
 		setIsDarkMode(prevState => !prevState);
