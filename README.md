@@ -103,5 +103,5 @@ useEffect(() => {
 
 ### Useful resources
 
-- [https://reactrouter.com/docs/en/v6/getting-started/overview#reading-url-parameters](https://reactrouter.com/docs/en/v6/getting-started/overview#reading-url-parameters) - This page showed me how I can implement URL parameters
+- [https://v5.reactrouter.com/web/example/url-params](https://v5.reactrouter.com/web/example/url-params) - This page showed me how I can implement URL parameters
 - [https://www.youtube.com/watch?v=scVRfoTEctc&ab_channel=Arslan](https://www.youtube.com/watch?v=scVRfoTEctc&ab_channel=Arslan) - This viedo showed me how I can display a spinner while the data is loading
